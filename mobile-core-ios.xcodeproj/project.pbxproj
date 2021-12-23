@@ -14,6 +14,7 @@
 		DAEDED402774AADD00CCD85A /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEDED3D2774AADC00CCD85A /* libffi.a */; };
 		DAEDED412774AADD00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEDED3E2774AADC00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a */; };
 		DAEDED422774AADD00CCD85A /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEDED3F2774AADD00CCD85A /* libgmp.a */; };
+		DAEDED452774B6C100CCD85A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEDED442774B6C100CCD85A /* libiconv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		DAEDED3D2774AADC00CCD85A /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffi.a; sourceTree = "<group>"; };
 		DAEDED3E2774AADC00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a"; sourceTree = "<group>"; };
 		DAEDED3F2774AADD00CCD85A /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
+		DAEDED442774B6C100CCD85A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEDED452774B6C100CCD85A /* libiconv.tbd in Frameworks */,
 				DAEDED402774AADD00CCD85A /* libffi.a in Frameworks */,
 				DAEDED422774AADD00CCD85A /* libgmp.a in Frameworks */,
 				DAEDED412774AADD00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a in Frameworks */,
@@ -48,6 +51,7 @@
 				DAEDED3C2774AABB00CCD85A /* Libraries */,
 				DAEDED2A2774A67300CCD85A /* mobile-core-ios */,
 				DAEDED292774A67300CCD85A /* Products */,
+				DAEDED432774B6C100CCD85A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +91,14 @@
 				DAEDED3E2774AADC00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a */,
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		DAEDED432774B6C100CCD85A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAEDED442774B6C100CCD85A /* libiconv.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
