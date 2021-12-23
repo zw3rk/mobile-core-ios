@@ -11,6 +11,9 @@
 		DAEDED2E2774A67300CCD85A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEDED2D2774A67300CCD85A /* ContentView.swift */; };
 		DAEDED302774A67500CCD85A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAEDED2F2774A67500CCD85A /* Assets.xcassets */; };
 		DAEDED332774A67500CCD85A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAEDED322774A67500CCD85A /* Preview Assets.xcassets */; };
+		DAEDED402774AADD00CCD85A /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEDED3D2774AADC00CCD85A /* libffi.a */; };
+		DAEDED412774AADD00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEDED3E2774AADC00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a */; };
+		DAEDED422774AADD00CCD85A /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEDED3F2774AADD00CCD85A /* libgmp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		DAEDED2F2774A67500CCD85A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAEDED322774A67500CCD85A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAEDED392774A85100CCD85A /* mobile-core-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mobile-core-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		DAEDED3D2774AADC00CCD85A /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffi.a; sourceTree = "<group>"; };
+		DAEDED3E2774AADC00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a"; sourceTree = "<group>"; };
+		DAEDED3F2774AADD00CCD85A /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgmp.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +33,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEDED402774AADD00CCD85A /* libffi.a in Frameworks */,
+				DAEDED422774AADD00CCD85A /* libgmp.a in Frameworks */,
+				DAEDED412774AADD00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +45,7 @@
 		DAEDED1F2774A67300CCD85A = {
 			isa = PBXGroup;
 			children = (
+				DAEDED3C2774AABB00CCD85A /* Libraries */,
 				DAEDED2A2774A67300CCD85A /* mobile-core-ios */,
 				DAEDED292774A67300CCD85A /* Products */,
 			);
@@ -67,6 +77,16 @@
 				DAEDED322774A67500CCD85A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAEDED3C2774AABB00CCD85A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DAEDED3D2774AADC00CCD85A /* libffi.a */,
+				DAEDED3F2774AADD00CCD85A /* libgmp.a */,
+				DAEDED3E2774AADC00CCD85A /* libHSmobile-core-0.1.0.0-HfUuggbqw4DC9ci8Blc8Tf-ghc8.10.7.a */,
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +304,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zw3rk.mobile-core-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +338,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libraries",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zw3rk.mobile-core-ios";
