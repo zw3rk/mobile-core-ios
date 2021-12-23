@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct mobile_core_iosApp: App {
+    init() {
+        hs_init(0, nil)
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
